@@ -1,0 +1,60 @@
+header 
+    position: relative
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 121px
+
+    
+a 
+    text-decoration: none
+    
+*
+    font-family: 'Poppins', sans-serif
+    margin: 0
+    padding: 0
+
+nav
+    width: 100%
+    position: fixed
+   
+
+.navbar
+    
+    padding: 33px 141px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: rgba(0,0,0,0.15)
+    z-index: 1
+    &_menu
+        display: flex
+        list-style-type: none
+        &_item
+            padding-right: 40px
+            &:last-child
+                padding-right: 0  
+        &_link 
+            font-size: 29.2px
+            font-weight: 500
+            color: #ffffff 
+            text-decoration: none 
+    &_search
+        display: flex
+        
+        &_place
+            padding-left: 19px
+            width: 274px
+            height: 51px
+            background-color: #fcc302
+            border: none
+            outline: none
+            caret-color: #ffff
+            &::placeholder
+                color: #ffff
+                
+        &_btn 
+            width: 71px
+            height: 51px
+            background-color: #00bec9
+            border: none 
