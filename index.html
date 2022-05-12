@@ -5,30 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    
     <link rel="stylesheet" href="css/style.min.css">
     <title>Veterin</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <div class="navbar">
-                    <img src="icons/logo.png" alt="logovet" class="navbar_img">
-                    <ul class="navbar_menu">
-                        <li class="navbar_menu_item"><a href="" class="navbar_menu_link">Home</a></li>
-                        <li class="navbar_menu_item"><a href="" class="navbar_menu_link">About</a></li>
-                        <li class="navbar_menu_item"><a href="" class="navbar_menu_link">Service</a></li>
-                        <li class="navbar_menu_item"><a href="" class="navbar_menu_link">Contact</a></li>
-                    </ul>
-                    <form class="navbar_search" action="" method="get" >
-                        <input class="navbar_search_place" type="search"  placeholder="Search..">
-                        <button class="navbar_search_btn"><img src="icons/magnifying.png" alt=""></button>
-                    </form>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar_img">
+                    <img src="icons/logo.png" alt="logovet">
                 </div>
+                <nav class="navbar_menu">
+                    <a href="" class="navbar_menu_link">Home</a>
+                    <a href="" class="navbar_menu_link">About</a>
+                    <a href="" class="navbar_menu_link">Service</a>
+                    <a href="" class="navbar_menu_link">Contact</a>
+                </nav>
+                <form class="navbar_search" action="" method="get" >
+                    <input class="navbar_search_place" type="search"  placeholder="Search..">
+                    <button class="navbar_search_btn"><img src="icons/magnifying.png" alt=""></button>
+                </form>
             </div>
-        </nav>
+        </div>
     </header>
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo_inner">
+                <div class="promo_inner_info">
+                    <div class="promo_inner_info_title">First I wanted to be a veterinarian</div>
+                    <div class="promo_inner_info_subtitle">Lorem Ipsum available but the majority have suffered alteration in some form, by injected humour randomised words.</div>
+                    <batton class="promo_inner_info_btn">
+                        <button class="promo_inner_info_btn_1 promo_inner_info_btn_1_hover">Contact Us</button>
+                        <button class="promo_inner_info_btn_2 promo_inner_info_btn_2_hover">Our Service</button>
+                    </batton>
+                </div>
+                <img src="img/dog_bg.png" alt="" class="promo_info_img">
+            </div>
+            
+        </div>
+    </section>
+    
 </body>
 </html>
