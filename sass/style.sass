@@ -236,3 +236,67 @@ h1,h2,h3,h4,h5,h6
                 font-size: 25px
                 font-weight: 400
                 color: #ffffff
+
+//VACATION============================================
+//SECONDPRESENT============================================
+
+.secondpresent
+    background-color: #ffffff
+    &_inner
+        
+        padding: 140px 0 140px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_info 
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            &_title
+                text-align: right
+                display: block
+                font-size: 50px
+                font-weight: 600
+                color: #313243
+            &_subtitle
+                text-align: right
+                display: block
+                margin-top: 49px
+                font-size: 29.2px
+                font-weight: 400
+                letter-spacing: 0.01em
+                color: #313243
+            &_btn
+                display: block
+                margin-top: 49px
+                width: 182px
+                height: 69px
+                background-color: $main-color
+                border-radius: 7px
+                font-size: 20.9px
+                font-weight: 600
+                letter-spacing: 0.01em
+                color: #ffffff
+                border: 0
+                cursor: pointer
+                transition: background-color .2s linear
+                +_hover
+        &_video
+            position: relative
+            display: flex
+            &_image
+                z-index: 2
+            &_button
+                position: absolute
+                transform: translate(200px, 200px)
+                border: 0
+                cursor: pointer
+                z-index: 4
+                background: none
+            &_yellowbox
+                position: absolute
+                width: 252px
+                height: 206px
+                transform: translate(280px, 300px)
+                background-color: $main-color
+                z-index: 1
