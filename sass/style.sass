@@ -184,7 +184,7 @@ h1,h2,h3,h4,h5,h6
                     transition: all 4s linear
                     display: block
                     &:hover
-                        transform: scale(1.2)
+                        transform: scale(1.2) rotate(0.1rad)
             &_button
                 position: absolute
                 transform: translate(200px, 200px)
@@ -196,7 +196,7 @@ h1,h2,h3,h4,h5,h6
                 position: absolute
                 width: 252px
                 height: 206px
-                transform: translate(-30px, 300px)
+                transform: translate(-30px, 300px) rotate(0.1rad)
                 background-color: $main-color
                 z-index: 1
 //PRESENT============================================            
@@ -298,7 +298,7 @@ h1,h2,h3,h4,h5,h6
                     transition: all 4s linear
                     display: block
                     &:hover
-                        transform: scale(1.2)
+                        transform: scale(1.2) rotate(0.2rad)
             &_button
                 position: absolute
                 transform: translate(200px, 200px)
@@ -310,7 +310,7 @@ h1,h2,h3,h4,h5,h6
                 position: absolute
                 width: 252px
                 height: 206px
-                transform: translate(280px, 300px)
+                transform: translate(280px, 300px) rotate(-0.1rad)
                 background-color: $main-color
                 z-index: 1
 //SECONDPRESENT============================================
@@ -420,7 +420,40 @@ h1,h2,h3,h4,h5,h6
                         transition: all .2s linear
                         &:hover
                             color: $main-color
-                            transform: translateY(-8px) scale(1.2) 
+                            transform: translateY(-8px) scale(1.5) rotate(0.2rad)
                     &:last-child
                         padding-right: 0    
 //TEAM============================================
+//ACHIEVE============================================
+.achieve
+    min-height: 575px
+    background: url('../img/layerBGYELLOW.png') center (center / cover) no-repeat
+    &_info
+        
+        padding-top: 165px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_item
+            display: flex
+            align-items: center
+            flex-direction: column
+            img
+                
+                transition: all 50s linear
+                &:hover
+                    transform: rotate(360rad) scale(1.6)
+                    
+            &_title
+                margin-top: 59px
+                text-align: center
+                font-size: 37.5px
+                font-weight: 600
+                color: #ffffff
+            &_subtitle
+                margin-top: 24px
+                text-align: center
+                font-size: 37.5px
+                font-weight: 700
+                color: #ffffff
+//ACHIEVE============================================
