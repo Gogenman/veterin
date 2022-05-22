@@ -81,9 +81,10 @@ h1,h2,h3,h4,h5,h6
             padding-right: 0
     &__form   
         display: flex
-        box-shadow: 8px 14px 15px 3px rgba(0,0,0,0.2)
+
     &__input 
-        padding-left: 19px
+        flex-direction: row
+        padding: 0 0 0 19px
         width: 274px
         height: 51px
         background-color: $main-color
@@ -98,6 +99,7 @@ h1,h2,h3,h4,h5,h6
             font-weight: 400
             color: #ffffff
     &__btn
+        padding: 0
         width: 71px
         height: 51px
         background-color: $sacond-color
@@ -138,7 +140,6 @@ h1,h2,h3,h4,h5,h6
         border: 3px solid #ffffff
         background-color: rgba(0,0,0,0)
         font-size: 20.9px
-        line-height: 1.2
         font-weight: 600
         letter-spacing: 0.01em
         color: #ffffff
@@ -441,14 +442,13 @@ h1,h2,h3,h4,h5,h6
         display: block
         &:hover
             transform: scale(1.2)
-    &__experiment
+    &__inner
         width: 361px
         min-height: 277px
         padding: 32px
         display: flex
         flex-direction: column 
     &__title
-        line-height: 1.2
         font-size: 25px
         font-weight: 600
         color: #313243
@@ -551,15 +551,29 @@ h1,h2,h3,h4,h5,h6
 //MEDIA================================================
 
 @media (max-width: 1200px)
+    .container
+        max-width: 1000px
+    .header
+        &__logo
+            display: none
+
     .promo 
+        min-height: 800px
         &__inner
             justify-content: center
             align-items: center
         &__btn
             display: block
-            margin: 49px auto
         &__img
             display: none
+        &__title
+            text-align: center
+        &__subtitle
+            text-align: center
+        &__button
+            display: flex
+            justify-content: center
+
     .present 
         &__inner
             padding: 100px 0 100px 0
@@ -571,3 +585,76 @@ h1,h2,h3,h4,h5,h6
         &__btn
             display: block
             margin: 45px auto
+
+    .vacation
+        &__info
+            flex-direction: column
+        &__title
+            font-size: 60px
+        &__subtitle
+            margin-bottom: 45px
+            font-size: 40px
+        &__img
+            width: 500px
+            
+    .secondpresent 
+        &__info
+            margin-top: 45px
+        &__inner
+            padding: 100px 0 100px 0
+            flex-direction: column
+        &__title
+
+            margin: 0 auto
+            
+        &__subtitle
+            text-align: center
+        &__btn
+            display: block
+            margin: 45px auto
+    
+    .sale
+        &__info
+            flex-direction: column
+        &__button
+            margin-bottom: 45px
+        &__img
+            width: 500px
+    
+    .team
+        &__info
+            flex-direction: column
+        &__links
+            margin-bottom: 45px
+        &__item
+            img
+                width: 500px
+        &__name
+            font-size: 60px
+        &__position
+            font-size: 45px
+
+    .information
+        &__info
+            flex-direction: column
+        &__item
+            display: flex
+            justify-content: space-between
+            margin-bottom: 45px
+        &__inner
+            width: 600px
+        &__link
+            margin-top: 30px
+            font-size: 25px
+        &__text
+            margin-top: 20px
+            font-size: 20px
+        &__date
+            margin-top: 20px
+            font-size: 30px
+        &__title
+            font-size: 30px
+
+    .footer
+        &__info
+            padding: 100px 0 100px 0
