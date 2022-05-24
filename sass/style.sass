@@ -69,6 +69,7 @@ h1,h2,h3,h4,h5,h6
         justify-content: space-between
         align-items: center
     &__menu
+        display: flex
     &__link
         padding-right: 40px
         font-size: 29.2px
@@ -658,3 +659,17 @@ h1,h2,h3,h4,h5,h6
     .footer
         &__info
             padding: 100px 0 100px 0
+
+@media (max-width: 1025px)
+    .container
+        max-width: 900px
+    .secondpresent
+        &__title
+            text-align: center
+    .header  
+        &__form
+            padding-left: 20px
+
+@media (max-width: 770px)
+    .container
+        max-width: 700px
